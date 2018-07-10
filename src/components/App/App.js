@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   render() {
-    const { className, ...props } = this.props    
+    const { className, staticContext, ...props } = this.props    
     return (
       <BrowserRouter>
         <div className={ classnames('App', className) } { ...props } >

@@ -8,7 +8,7 @@ class Home extends Component {
   }
 
   render() {
-    const { className, ...props } = this.props
+    const { className, staticContext, ...props } = this.props
     return (
       <div className={ classnames('Home', className) } { ...props } >
         <header>

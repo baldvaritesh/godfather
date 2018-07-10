@@ -22,10 +22,12 @@ module.exports = {
 	],
 	output: {
 		path: paths.appBuild,
-		filename: 'app.bundle.js'
+		filename: 'app.bundle.js',
+		publicPath: '/'
 	},
 	devServer: {
 		hot: true,
+		historyApiFallback: true,
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
